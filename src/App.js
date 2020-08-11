@@ -1,13 +1,10 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import logo from "./logo.svg";
 import "./App.css";
 import ReactGA from "react-ga";
 
 function App() {
-  const [count, setCount] = useState(0);
-
   useEffect(() => {
-    console.info(`You clicked ${count} times`);
     initializeReactGA();
   });
 
@@ -49,9 +46,9 @@ function App() {
         >
           Learn React
         </a>
+        <button onClick={Event}>Click Event</button>
+        <button onClick={Event2}>Click Event 2</button>
       </header>
-      <button onClick={Event}>Click Event</button>
-      <button onClick={Event2}>Click Event 2</button>
     </div>
   );
 }
